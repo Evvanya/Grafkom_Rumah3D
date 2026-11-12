@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Aksi NetBeans: tombol Run (F6) menjalankan aplikasi lewat exec-maven-plugin yang dikonfigurasi di pom.xml -->
+<actions>
+    <action>
+        <actionName>run</actionName>
+        <packagings><packaging>*</packaging></packagings>
+        <goals>
+            <goal>process-classes</goal>
+            <goal>org.codehaus.mojo:exec-maven-plugin:3.1.0:exec</goal>
+        </goals>
+    </action>
+    <action>
+        <actionName>CUSTOM-Run (mvn compile exec:exec)</actionName>
+        <displayName>Run Visual Realism Suite</displayName>
+        <goals>
+            <goal>compile</goal>
+            <goal>org.codehaus.mojo:exec-maven-plugin:3.1.0:exec</goal>
+        </goals>
+    </action>
+</actions>
